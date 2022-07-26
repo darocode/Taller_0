@@ -140,11 +140,16 @@ nav{
     width: 90%;
 }
 
-.direccion{
+.direccion:nth-child(1){
     display: flex;
     justify-content: center;
 }
 
 .direccion h3{
     display: block;
+}
+
+.direccion hr{
+      margin: 1em;
+      height: 1em;
 }
