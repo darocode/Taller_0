@@ -17,7 +17,7 @@
     margin:0;
 }
 body{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Marcellus', serif;
     font-size: 16px;
 }
  
@@ -43,19 +43,29 @@ nav{
       padding: 1rem;
 }.logo img{
       height: 3rem;     
-}#features{
+}
+
+
+
+#features{
       background: url(../img/bg-features.png);
-      color: white;
-      padding-top: 1rem;
+    color: white;
+    padding-top: 1rem;
+    background-size: cover;
+    
+    height: 21em;
+
 }.features-title{
       background-color: rgba(0, 0, 0, 0.342);
       text-align: center;
       padding: 0.5rem;
-      font-size: 1.5rem;
+      font-size: 3rem;
 }.features-description{
       display: flex;
       flex-flow: row wrap;
       justify-content: space-around;
+      align-items: center;
+      margin-top: 3em;
 }.feature{
       width: 25%;
       min-width: 180px;
@@ -96,58 +106,49 @@ nav{
       background-color: rgba(29, 21, 21, 0.158);
       color: white;
       width: 100%;
-      height: 280px;
+      height: 180px;
       display: flex;
       justify-content: space-between;
       align-items: center;
       flex-flow: row wrap;
 
 }.informacion{
-    width: 100%;
-    height: 100%;  
-    display: flex;
-    justify-content: space-around;  
+      width: 100%;
+      height: 100%;  
+      display: flex;
+      justify-content: space-around;  
 
 }.text-log{
-    margin: 2.5em;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+      margin: 2.5em;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
 }#hijo1{
-    font-size: 1.1em;
-    width: 45%;
+      font-size: 1.1em;
+      width: 45%;
 }#hijo img{
-    width: 70%;
-    height: 70%;
-}#hijo{
-    
-    display: flex;
-    justify-content: center;
-}
-.ubicacion{
-      padding: 3rem;
-}
-.title{
-    display: flex;
-    justify-content: center;
-    
-}
+      width: 65%;
+      height: 65%;
+}#hijo{     
+      display: flex;
+      justify-content: center;
+}.tit h1{
+      display: flex;
+      justify-content: center;
+      margin-top: 3%;
+      font-size: 3em;
+}.mapa {
+      display: flex;
+      justify-content: center;
+      padding: 1rem;
+}.mapa iframe{
+      width: 100%;
+}.inf h3{
 
-.mapa{
-    display: flex;
-    justify-content: center;
-}
-
-.mapa iframe{
-    width: 98%;
-}
-
-.direccion h3{
-      margin: 0.5em;
       font-size: 1.5em;
       display: flex;
       justify-content: center;
-}.hr{
+}.linea{
       display: flex;
       justify-content: center;
       margin-left: 25%;
@@ -155,114 +156,158 @@ nav{
       background-color: #337AB7;
       width: 50%;
       height: 0.1em;
-}
-
-.footer-container{
+      
+}.inf{
+      padding: 2em;
+ }.titulo h1{
+      margin-bottom: 2%;
+ }.footer-container{
       background-color: var(--negro);
       color: white;
       padding: 2%;
 }
-
 .footer-container .text-footer{
       display: flex;
       justify-content: space-around;
+      align-items: center;
       font-size: 1.2em;
-      align-items: baseline;
-      height: 9rem;
-      
+      height: 100%;
+      width: 100%;
 }
-
-
-
 .text.t{
       width: 25%;
 
       
-}
-
-.icons{
+}.icons{
       display: flex;
       flex-wrap: nowrap;
       flex-direction: column;
       
       
-}
-
-.icons div{
+}.icons div{
       display:flex;
       padding: 2%;
       
-}
-
-.text.t3 {
+}.text t3 {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      
       flex-wrap: wrap;
       padding: 2%;
       
       
-}
-#separador{
+}#separador{
       margin-top: 21%;
-}.red{
+}.carrusel{
       display: flex;
       justify-content: space-around;
-}.redes{
-      width: 6.5%;
-      margin-left: 3.5%;
-}
+      width: 100%;
+      transition: .3s all ease;
+     color: white;
+    
+}.carrusel img{
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      
+}.ip{
+      height: 100%;
+}.icons p{
+      margin-left: 2%;
+}#op img{
+      width: 16%;
+      height: 3.5em;
+}.enc{
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: flex-start;
+      background: url(/img/Group\ 200.svg);
+      background-size: cover;
 
-
-.titulo{
+}.titulo{
+      font-size: 1.6em;
       display: flex;
       justify-content: center;
       background-color: var(--negro);
       align-items: center;
       color: white;
       height: 7em;
-      font-size: 2em;
- }.titulo h1{
-      margin-bottom: 2%;
- }.opiniones{
-      height:20em ;
-
- }.carrusel {
+      
+ }.ip{
+      position: relative;
       display: flex;
-     justify-content: space-around;
-     width: 100%;
-     position: absolute;
-     margin-top: -2%;
-
-}.carrusel img{
-      border-radius: 50%;
-      width: 22%;
-    height: 72%;
-    padding: 5%;
-}#op{
+      align-items: center;
+      padding: 3%;
+      height: 7rem;
+ }#op{
+    margin-top: -3%;
+    margin-bottom: 3%;
+    height: 100%;
+    width: 23em;
+    background: linear-gradient(49.54deg, #337AB7 6%, #0B3860 90.34%);
+ }.enc img{
+      padding: 2%;
+ }.estrellas{
       display: flex;
       flex-direction: column;
-      background: linear-gradient(49.54deg, #337AB7 2.89%, #0B3860 80.34%);
-      color:var(--blanco);
-      width: 25%;
-      border-radius: 2%;
+      justify-content: center;
+      padding: 3%;
+ }
+
+ .opciones{
+      width: 100%;
       
+      height: 4em;
+      display: flex;
+      justify-content: center;
+ 
+ }
 
-}.nombre{
-      background-image: url(/img/Group\ 200.svg);
-      background-size: contain;
-      margin-top: -2%;
-      background-repeat: no-repeat;
-}.desc{
-      background: transparent;
+ .opcion{
+      width: 5%;
+      height: 1em;
+      background: var(--gris);
+      display: flex;
+      margin-left: 2em;
+      cursor: pointer;
       
-         
+      
+      
+ }
 
-}.ppppp{
-      margin-left: 33%;
-      margin-top: -23%
-}
+ .opcion.activo{
+      background: red;
+ }
 
 
+ .slider-img{
+      display: flex;
+      transition: .3s ease all;
+      transform: translateX(0%);
+ }
 
+ .slider_option{
+      width: 100%;
+      
+      height: 4em;
+      display: flex;
+      justify-content: center;
+ 
+ }
+
+ .slide{
+      width: 5%;
+      height: 1em;
+      background: var(--gris);
+      display: flex;
+      margin-left: 2em;
+      cursor: pointer;
+      
+      
+      
+ }
+
+ .slide.activo_slide{
+      background: red;
+ }
