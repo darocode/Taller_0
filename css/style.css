@@ -98,7 +98,7 @@ nav{
       height: 100%;
       overflow: hidden;
       position: relative;
-}#textosl p{
+}#textos-slide p{
       position: absolute;
       top: 64%;
       font-family: 'Marcellus', serif;
@@ -132,7 +132,7 @@ nav{
 }#hijo{     
       display: flex;
       justify-content: center;
-}.tit h1{
+}.titulo-ubicacion h1{
       display: flex;
       justify-content: center;
       margin-top: 3%;
@@ -143,7 +143,7 @@ nav{
       padding: 1rem;
 }.mapa iframe{
       width: 100%;
-}.inf h3{
+}.info h3{
 
       font-size: 1.5em;
       display: flex;
@@ -157,7 +157,7 @@ nav{
       width: 50%;
       height: 0.1em;
       
-}.inf{
+}.info{
       padding: 2em;
  }.titulo h1{
       margin-bottom: 2%;
@@ -210,14 +210,14 @@ nav{
       height: 100%;
       border-radius: 50%;
       
-}.ip{
+}.cuerpo{
       height: 100%;
 }.icons p{
       margin-left: 2%;
-}#op img{
+}#card-user img{
       width: 16%;
       height: 3.5em;
-}.enc{
+}.head{
       width: 100%;
       height: 100%;
       display: flex;
@@ -234,19 +234,19 @@ nav{
       color: white;
       height: 7em;
       
- }.ip{
+ }.cuerpo{
       position: relative;
       display: flex;
       align-items: center;
       padding: 3%;
       height: 7rem;
- }#op{
+ }#card-user{
     margin-top: -3%;
     margin-bottom: 3%;
     height: 100%;
     width: 23em;
     background: linear-gradient(49.54deg, #337AB7 6%, #0B3860 90.34%);
- }.enc img{
+ }.head img{
       padding: 2%;
  }.estrellas{
       display: flex;
