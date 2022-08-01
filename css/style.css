@@ -33,39 +33,39 @@ nav{
       font-family: 'Marcellus', serif;
       font-size: 1.3em;
       padding: 1rem;
-}.item{
-      border-radius: 5%;
+}.item button{
+      color: white;
+      font-size: 0.8em;
+      border-radius: 10%;
       background-color: #337AB7;
+      border: none;
       padding: 0.5rem;
 }nav a{
       color: var(--blanco);
       text-decoration: none;
       padding: 1rem;
-}.logo img{
-      height: 3rem;     
+      transition: .5s all ease;
+      
+}nav a:hover{
+      background-color:#0B3860;
+      width: 100%;
 }
 
-
-
-#features{
+.logo img{
+      height: 3rem;     
+}#features{
       background: url(../img/bg-features.png);
-    color: white;
-    padding-top: 1rem;
-    background-size: cover;
-    
-    height: 21em;
-
+      color: white;
+      padding-top: 1rem;
 }.features-title{
       background-color: rgba(0, 0, 0, 0.342);
       text-align: center;
       padding: 0.5rem;
-      font-size: 3rem;
+      font-size: 1.5rem;
 }.features-description{
       display: flex;
       flex-flow: row wrap;
       justify-content: space-around;
-      align-items: center;
-      margin-top: 3em;
 }.feature{
       width: 25%;
       min-width: 180px;
@@ -90,23 +90,23 @@ nav{
       align-items: center;
       justify-content: space-between;
       padding: 1rem;
-}.slider img{
+}
+.slider img{
       width: 100%;
       height: 100%;
 }.contenido{
       width: 100%;
       height: 100%;
-      overflow: hidden;
       position: relative;
-}#textos-slide p{
+}#textosl p{
       position: absolute;
-      top: 64%;
+      margin-top: -16%;
       font-family: 'Marcellus', serif;
       font-size: 3rem;
       background-color: rgba(29, 21, 21, 0.158);
       color: white;
       width: 100%;
-      height: 180px;
+      height: 37%;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -123,16 +123,16 @@ nav{
       display: flex;
       justify-content: space-around;
       align-items: center;
-}#hijo1{
+}#texto-hijo{
       font-size: 1.1em;
       width: 45%;
-}#hijo img{
+}#logo-hijo img{
       width: 65%;
       height: 65%;
-}#hijo{     
+}#logo-hijo{     
       display: flex;
       justify-content: center;
-}.titulo-ubicacion h1{
+}.tit h1{
       display: flex;
       justify-content: center;
       margin-top: 3%;
@@ -143,7 +143,7 @@ nav{
       padding: 1rem;
 }.mapa iframe{
       width: 100%;
-}.info h3{
+}.direccion h3{
 
       font-size: 1.5em;
       display: flex;
@@ -157,7 +157,7 @@ nav{
       width: 50%;
       height: 0.1em;
       
-}.info{
+}.direccion{
       padding: 2em;
  }.titulo h1{
       margin-bottom: 2%;
@@ -202,22 +202,21 @@ nav{
       display: flex;
       justify-content: space-around;
       width: 100%;
-      transition: .3s all ease;
+
      color: white;
-    
 }.carrusel img{
       width: 100%;
       height: 100%;
       border-radius: 50%;
       
-}.cuerpo{
+}.lorem{
       height: 100%;
 }.icons p{
       margin-left: 2%;
-}#card-user img{
+}#card-contenedor img{
       width: 16%;
       height: 3.5em;
-}.head{
+}.enc{
       width: 100%;
       height: 100%;
       display: flex;
@@ -226,7 +225,7 @@ nav{
       background-size: cover;
 
 }.titulo{
-      font-size: 1.6em;
+      font-size: 1.7em;
       display: flex;
       justify-content: center;
       background-color: var(--negro);
@@ -234,19 +233,19 @@ nav{
       color: white;
       height: 7em;
       
- }.cuerpo{
+ }.lorem{
       position: relative;
       display: flex;
       align-items: center;
       padding: 3%;
       height: 7rem;
- }#card-user{
-    margin-top: -3%;
-    margin-bottom: 3%;
-    height: 100%;
-    width: 23em;
-    background: linear-gradient(49.54deg, #337AB7 6%, #0B3860 90.34%);
- }.head img{
+ }#card-contenedor{
+      margin-top: -3%;
+   margin-bottom: 3%;
+   height: 100%;
+   width: 32em; 
+   background: linear-gradient(49.54deg, #337AB7 6%, #0B3860 90.34%);
+ }.enc img{
       padding: 2%;
  }.estrellas{
       display: flex;
@@ -255,59 +254,156 @@ nav{
       padding: 3%;
  }
 
- .opciones{
-      width: 100%;
-      
-      height: 4em;
-      display: flex;
-      justify-content: center;
- 
- }
+ /* resolucion desktop*/
+    @media screen and (min-width: 1280px)/*la pantala debe ser minimo paraque se aplique*/ {
+      .logo i{
+            display: none;
+      }
+      .text.t hr{
+            display: none;
+      }.text.t2 hr{
+            display: none;
+      }.lorem{
+            font-size: 1.3em;
+      }.features-title{
+            font-size: 2em;
+      }
+    }
+/*Resolucion media tablet*/
+@media screen and (min-width: 769px) {
 
- .opcion{
-      width: 5%;
-      height: 1em;
-      background: var(--gris);
-      display: flex;
-      margin-left: 2em;
-      cursor: pointer;
-      
-      
-      
- }
+      .logo i{
+            display: none;
+      }
+      .menu_nav hr{
+            display: none;
+      }.text.t hr{
+            display: none;
+      }.text.t2 hr{
+            display: none;
+      }#card-contenedor{
+            width: 30%;
+      }
+}
 
- .opcion.activo{
-      background: red;
- }
-
-
- .slider-img{
-      display: flex;
-      transition: .3s ease all;
-      transform: translateX(0%);
- }
-
- .slider_option{
-      width: 100%;
-      
-      height: 4em;
-      display: flex;
-      justify-content: center;
- 
- }
-
- .slide{
-      width: 5%;
-      height: 1em;
-      background: var(--gris);
-      display: flex;
-      margin-left: 2em;
-      cursor: pointer;
-      
-      
-      
- }
-
- .slide.activo_slide{
-      background: red;
- }
+/* Resoluciòn Movile*/
+@media screen and (max-width: 768px) {
+      .logo{
+            background-color: var(--negro2);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 100%;
+            width: 100%;
+            padding: 1%;
+        }
+        
+      .logo img{
+            width: 100%;
+          max-width: 200px;
+      }
+      .logo i{
+            color: var(--blanco);
+          font-size: 2rem;
+      }
+      .menu_nav{
+            background-color: rgba(1, 10, 52, 0.838);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;  
+            
+        }
+        .menu_nav hr{
+            width: 100%;
+            background-color: var(--blanco);
+        }
+        .item{
+        padding: 1rem;
+                
+      }
+      nav a{
+            color: var(--blanco);
+            text-decoration: none;
+            text-align: center;
+        }
+        nav a:hover{
+            background-color: #0B3860;
+            width: 100%;
+        }
+        .menu_nav button{
+            padding: 1rem;
+            background-color:transparent;
+            border: none;
+            border-radius: 3px;
+            font-size: 1em;
+            padding: 0.5rem;
+            font-family: 'Marcellus', serif;
+            color: var(--blanco);
+        }nav{
+            display: flex;
+            flex-direction: column;
+            padding: 1%;
+            background-color: #000;   
+            transition: .5s ease;  
+                  
+        }.menu_nav{
+            display: none;
+            width: 100%;
+            transition: .5s ease;  
+            
+        }
+        nav:hover{
+            padding: 0;
+        }
+        
+        nav:hover .menu_nav{
+            display: flex;
+            
+        }
+        #logo-hijo{
+            display: none;
+        }#texto-hijo{
+            width: 100%;
+        }#textosl p{
+            font-size: 2em;
+        }.text-footer{
+            display: flex;
+            flex-direction: column;
+        }.text.t{
+            width: 100%;
+        }.text.t2{
+            width: 100%;
+        }.text.t3{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 100%;
+        }#separador{
+            margin-top: 0%;
+        }.direccion{
+            display: flex;
+            flex-direction: column;
+           
+            font-size: 0.8em;
+        }.linea{
+            width: 100%;
+            margin-left:0%;
+        }.titulo{
+            height: 4em;
+        }.titulo h1{
+            font-size: 1em;
+        }.carrusel{
+            margin-left: -15%;
+            width: 130%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }#card-contenedor{
+            width: 30%;
+        }.lorem{
+            font-size: 0.9em;
+        }.opiniones{
+            overflow: hidden;
+        }
+}
