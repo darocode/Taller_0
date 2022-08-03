@@ -38,6 +38,13 @@ ul{
 }section{
       display: flex;
 }
+.desc .icon_p #perfil{
+    display: none;
+    width: 4em;
+    height: 4em;
+    justify-content: center;
+    align-items: center;
+}
 .menu{
       width: 17%;   
       color: white;
@@ -57,7 +64,10 @@ ul{
       justify-content: space-between;
       padding: 7%;
       height: 30%;  
-      background: linear-gradient(49.54deg, #337AB7 2.89%, #0B3860 80.34%);
+      background: url(../img/d_fondo.jpeg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      
 }.logo img{
       width: 60%;   
 }.logo .mobile{
@@ -122,14 +132,15 @@ a{
     display: flex;
     flex-direction: row;
 }.foto{
-    width: 25%;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: flex-end
+    align-items: center;
 }.foto img{
     border-radius: 5%;
     margin-bottom: 5%;
-    width: 70%;
+    width: 50%;
+    height: 15em;
 }.formulario-container{
     width: 75%;
     height: 140%;
@@ -158,67 +169,94 @@ a{
 }.password a{
     font-size: .8em;
     padding-bottom: 10%;
-}.formulario-container{
-    font-size: 1.3em;
-    display: flex;
-    flex-wrap: wrap;
-}.formulario-container input{
-    width: 100%;
-    padding: 2%;
-    border: none;
-    border-bottom: var(--gris) solid .2em;  
-}.container .welcome{
+}
+.container .welcome{
     width: 57%;
     height: 10%;
     display: flex;
     justify-content: flex-end;
     align-items: center;    
-}.formulario{
+}
+.form-container{
     width: 100%;
-    height: 90%;
+    margin: 1em;
+    
+}
+.form-row{
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-}.formulario-container h2{
-    margin: 2% 0 2% 5% ;
-}.right-form{
-      width: 50%;
-    height: 88%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 0 5% 0 5%;
-}.left-form{
-    width: 50%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
     justify-content: space-around;
-    padding: 0 5%  5%;   
-}.left-form .generos{
+}
+.form{
+    
     display: flex;
-    flex-direction: row;
-    align-items: center;
-}.left-form .genero{
-    background-color: var(--azuloscuro);
-    border-color: var(--azuloscuro);
-}.left-form button{
-    margin-top: 5%;
-    width: 70%;
-    padding: 3%;
-    font-size: 1em;
-    color: white;
-    background-color: var(--negro);
-    border: none;
+    flex-direction: column;
 }
 
+.form input{
+    width: 29em;
+    height: 2em;
+    border: none;
+    border-bottom: 2px solid var(--gris);
+}
+
+.form input[type=radio]{
+    width: 5em;
+    
+}
+
+.form .radio{
+    display: flex;
+    padding: 0em;
+}
+
+.form-row-2{
+    display: flex;
+    margin: 2.5em;
+}
+
+.form a{
+    display: 	flex;
+    background: var(--negro);
+    width: 15em;
+    height: 3em;
+    border-radius: .2em;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.form label{
+    color: black;
+    font-size: 1.2em;
+    font-weight: 500;
+    padding: 0.2em;
+}
+
+.form a h2{
+    font-weight: 100;
+}
+
+.iconos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/********************/
 
 @media screen and (min-width: 10px) and (max-width: 768px){
     .logo .desktop{
         display: none;
     }.logo .mobile{
         display: block;
-    }.desc img{
+    }
+    .desc .icon_p #perfil{
+        display: flex;
+        height: 3em;
+        width: 3em;
+    }
+    .desc img{
         display: block;
         max-width: 40px;
         width: 100%;
@@ -228,7 +266,11 @@ a{
         align-items: center;
     }.desc h3,h4{
         display: none;
-    }.lista a p{
+    }
+    .iconos .icon_1{
+        display: none;
+    }
+    .lista a p{
         display: none;
     }.lista a{
         justify-content: center;
@@ -254,30 +296,24 @@ a{
         display: flex;
         flex-direction: column;
         height: 100%;
-    }.formulario-container{
-      margin-left: 25%;
-    }.formulario{
-      width: 100%;
-      font-size: 0.8em;
-      display: flex;
-      flex-direction: column;
-      
     }.datos{
       height: 100%;
     }.inferior{
       display: flex;
       flex-direction: column;
     }.foto{
-      margin-left: 35%;
-    }.foto img{
-      width: 100%;
-
+      margin-left: 0;
+    }.foto img {
+        width: 60%;
+        height: 14em;
     }.iconos{
       display: flex;
+      justify-content: center;
       align-items: center;
-      width: 100%;
-      height: 10em;
-      margin-bottom: 10%;
+      width: 70%;
+      height: 2em;
+      margin-bottom: 20%;
+      margin: 2%;
     }.password{
      
       font-size: 0.8em;
@@ -298,4 +334,33 @@ a{
     }.dos{
       margin-left: -30%;
     }
+
+    .form-row{
+        display: flex;
+        flex-direction: column;
+    }
+    .form-row{
+        margin: 1em;
+    }
+    .form input{
+        width: 90%;
+    }
+    .form input[type=radio]{
+        width: 1em;
+        
+    }
+    .form-row-2{
+        margin: 1em;
+    }
+
+    .form a{
+        width: 12em;
+    }
+    .password{
+        display: none;
+    }
 }
+
+
+
+
