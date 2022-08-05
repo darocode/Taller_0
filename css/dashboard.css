@@ -114,7 +114,7 @@ a{
       height: 100%;
 }.datos{
     height: 100vh;
-    background-image: url(/img/habitacion_fondo.jfif);
+    background-image: url(../img/ciudad.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
