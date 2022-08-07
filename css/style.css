@@ -221,7 +221,7 @@ nav{
       height: 100%;
       display: flex;
       justify-content: flex-start;
-      background: url(/img/Group\ 200.svg);
+      background: url(../img/Group\ 200.svg);
       background-size: cover;
 
 }.titulo{
