@@ -20,11 +20,11 @@
 }
 body
 {
-    background: url(../img/R.jfif) no-repeat;
+    background: url(../img/h.jpg) no-repeat;
     background-size: cover;
     color: white;
     padding-top: 8rem;
-    height: 10%;
+    height: 100%;
 }
 section
 {
@@ -33,15 +33,15 @@ section
     justify-content: center;
     background: url(../img/fondo.jfif) no-repeat;
     opacity: 0.82;
-    width: 370px;
-    height: 10%;
-    border-radius: 2px;
+    width: 314px;
+    height: 100%;
+   margin-top: 5%;
     margin-left: auto;
     margin-right: auto;
     padding: 1%;
 }
 
-.login-container
+.login
 {
     display: flex;
     flex-direction: column;
@@ -61,7 +61,7 @@ i
     margin-bottom: 1rem;
     margin-top: 2rem;
 }
-.login
+.iniciosesion
 {
     display: flex;
     flex-direction: column;
@@ -80,6 +80,9 @@ input
     padding-left: 5rem;
     border-radius: 2px;
     box-shadow: 0px 1px rgba(97, 97, 97,500);
+}a{
+    text-decoration: none;
+    color: var(--blanco)
 }
 #boton
 {
@@ -115,12 +118,15 @@ p
 {
     display: flex;
     justify-content: flex-start;
-    padding: 1rem;
+  
+}form label{
+    color: black;
+
 }
 
 
-
-@media screen and (min-width: 480px) and (max-width:768px){
+/*movil*/
+@media screen and (min-width: 320px) and (max-width: 480px){
 
     *
     {
@@ -128,9 +134,9 @@ p
     }
     body
     {
-        background: url(../img/R.jfif) no-repeat;
+        background: url(../img/habitacion.jpeg) no-repeat;
         background-size: cover;
-        height: 1200px;
+        height: 765px;
         color: white;
         padding-top: 5rem;
     }
@@ -138,33 +144,24 @@ p
     {
         width:10rem;
     }
-    #logo
-    {
-        display: flex;
-        justify-content: flex-start;
-        padding: 1rem;
-    }
+    
     section
     {
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        opacity: 0.82;
-        width: 300px;
+        justify-content: center;    
         padding-bottom: 2rem;
-        border-radius: 2px;
-        margin-left: auto;
-        margin-right: auto;
+    
         background-size: cover;
-        margin-top: 17%;
-        height: 30%;
+        margin-top: 35%;
+        height: 45%;
     }
-    .login-container
+    .login
     {
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-top: -7%;
+        margin-top: -30%;
     
     }
     i
@@ -178,9 +175,9 @@ p
         display: flex;
         align-items: center;
         margin-bottom: 1rem;
-        margin-top: 2rem;
+        margin-top: 4em;
     }
-    .login{
+    .iniciosesion{
         display: flex;
         flex-direction: column;
         margin-bottom: 12px;
@@ -193,6 +190,7 @@ p
         text-shadow: -1px 1px rgb(97, 97, 97);
     }
     input{
+        width: 100%;
         padding-bottom: 8px;
         border: none;
         padding-left: 0.5rem;
@@ -214,10 +212,12 @@ p
     }
     p{
         display: none;
+    }form{
+    width: 75%;
     }
 }
 
-@media screen and (min-width: 769px) and (max-width: 1024px)
+@media screen and (min-width: 481px) and (max-width: 1024px)
 {
     *
     {
@@ -225,100 +225,62 @@ p
     }
     body
     {
-        background: url(../img/R.jfif) no-repeat;
+        background: url(../img/habitacion.jpeg) no-repeat;
         background-size: cover;
-        height: 100vh;
+        height: 1000px;
         color: white;
         padding-top: 5rem;
+    }#logo{
+        margin-bottom: -4%;
+        margin-left: 2%;
     }
-    #logo img
-    {
-        width:10rem;
-    }
-    #logo
-    {
-        display: flex;
-        justify-content: flex-start;
-        padding: 1rem;
-    }
+    
     section
-    {
-        padding-top: 0;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        opacity: 0.82;
-        padding-bottom: 2rem;
-        border-radius: 2px;
+    {   
+        width: 300px;
         margin-left: auto;
         margin-right: auto;
-        padding: 1%;
+        background-size: cover;
+        margin-top: 20%;
+        height: 40%;
     }
-    .login-container
+    .login
     {
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 1%;
-        background: url(../img/fondo.jfif) no-repeat;
+        margin-top: -12%;
+    
     }
     i
     {
         background-color: var(--Magenta);
         font-size: 2rem;
         border-radius: 50%;
-        width: 50px;
-        height: 50px;
-        text-align: center;
-        display: flex;
-        align-items: center;
         margin-bottom: 1rem;
-        margin-top: 2rem;
+        margin-top: 6rem;
     }
-    .login
-    {
+    .iniciosesion{
         display: flex;
         flex-direction: column;
         margin-bottom: 12px;
         color: #fff;
+       
     }
     label
     {
+      margin-bottom: 3%;
         font-family: 'Roboto', sans-serif;
-        text-shadow: -1px 1px rgb(97, 97, 97);
-    }
-    input
-    {
-        padding-bottom: 8px;
-        border: none;
-        padding-left: 5rem;
-        border-radius: 2px;
-        box-shadow: 0px 1px rgba(97, 97, 97,500);
-    }
+        font-size: 1.1em;
+    }  
     #boton
     {
-        font-size: 1rem;
+        font-size: 1em;
         color: #fff;
         background-color: var(--negro2);
         width: 100%;
-        font-family: 'Marcellus', serif;
-        padding-bottom: 5px;
-        margin-top: 2rem;
-        margin-bottom: 1rem;
-        border-radius: 2px;
-        box-shadow: 0px 1px rgba(97, 97, 97,500);
-    }
-    p a
-    {
-        text-decoration: none;
-        color: var(--negro2);
-    }
-    p
-    {
-        font-family: 'Roboto', sans-serif;
-        font-size: 0.8rem ;
-        text-align: center;
-        font-weight: bolder;
-        text-shadow: -1px 1px rgb(153, 153, 153);
+        font-family: 'Marcellus', serif;        
+    }p{
+      font-size: 1em;
     }
 }
