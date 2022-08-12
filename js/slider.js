@@ -12,7 +12,7 @@ const punto = document.querySelectorAll('.opcion')
 
 
 //recorrer todos los puntos
-punto.forEach( (cadaPunto, i) => {
+punto.forEach(( cadaPunto, i) => {
     //Asignar un click a cada punto
     punto[i].addEventListener('click',()=>{
 

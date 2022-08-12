@@ -321,8 +321,12 @@ nav{
         }
         .item{
         padding: 1rem;
+        color: var(--blanco);
+            text-decoration: none;
+            text-align: center;
                 
       }
+      
       nav a{
             color: var(--blanco);
             text-decoration: none;
@@ -332,6 +336,12 @@ nav{
             background-color: #0B3860;
             width: 100%;
         }
+        .menu_nav.active{
+            display: flex;
+            padding: 0;
+            transform: translateY(0%);
+        }
+
         .menu_nav button{
             padding: 1rem;
             background-color:transparent;
@@ -344,7 +354,7 @@ nav{
         }nav{
             display: flex;
             flex-direction: column;
-            padding: 1%;
+            padding: 0%;
             background-color: #000;   
             transition: .5s ease;  
                   
@@ -354,14 +364,9 @@ nav{
             transition: .5s ease;  
             
         }
-        nav:hover{
-            padding: 0;
-        }
+
         
-        nav:hover .menu_nav{
-            display: flex;
-            
-        }
+        
         #logo-hijo{
             display: none;
         }#texto-hijo{
